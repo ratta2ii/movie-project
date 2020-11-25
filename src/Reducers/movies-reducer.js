@@ -7,7 +7,6 @@ let initialState = {
     error: null,
 }
 
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state = initialState, action) => {
     switch (action.type) {
@@ -21,7 +20,6 @@ export default (state = initialState, action) => {
                 movies: action.movies
             });
         case c.GET_MOVIES_FAILURE:
-            console.log("LLLLLLLL: ", action.error)
             return Object.assign({}, state, {
                 isLoading: false,
                 error: action.error
