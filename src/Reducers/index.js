@@ -8,5 +8,4 @@ const rootReducer = combineReducers({
     movieInfoSlice: movieInfoReducer,
 });
 
-
 export default rootReducer;
