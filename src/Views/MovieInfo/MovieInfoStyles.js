@@ -6,8 +6,7 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '100vw',
-        height: '100vh',
+        height: '79.5vh',
     },
     paperCon: {
         display: 'flex',
@@ -27,10 +26,12 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: '#223037',
         width: '60%',
         minHeight: 100,
+        maxHeight: 365,
         padding: '15px 15px 10px',
     },
     posterImg: {
         width: '100%',
+        maxHeight: 340,
     },
     infoBox: {
         padding: '50px 50px 50px 0',
@@ -40,16 +41,18 @@ export const useStyles = makeStyles((theme) => ({
         fontFamily: 'sans-serif',
         marginTop: 20,
         color: '#f5bc16',
+        lineHeight: '2.5rem',
     },
     dirNdate: {
         color: '#89b9df',
-        fontSize: '.9rem'
+        fontSize: '.9rem',
+        marginTop: 5,
     },
     moviePlot: {
         fontSize: '1rem',
         letterSpacing: '.02rem',
         lineHeight: '1.3',
-        marginTop: 30,
+        marginTop: 25,
     },
     actionAreaGridCon: {
         marginTop: 50,
@@ -61,12 +64,17 @@ export const useStyles = makeStyles((theme) => ({
     backContainer: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
+        marginLeft: 62,
         height: 40,
+        marginTop: 3,
+    },
+    arrowIcon: {
+        color: '#637c90',
     },
     backButton: {
-        color: 'white',
-        fontSize: '.8rem'
+        fontSize: '.8rem',
+        marginLeft: -8,
+        color: '#637c90',
     },
     votesBox: {
         display: 'flex',
@@ -79,17 +87,17 @@ export const useStyles = makeStyles((theme) => ({
     voteText: {
         fontSize: '.8rem',
         marginBottom: 10,
-
     },
     downThumbIcon: {
         margin: '0 2px 0 10px',
-        fontSize: 'large'
+        fontSize: 'large',
+        cursor: 'pointer',
     },
     upThumbIcon: {
         margin: '0 10px 0 2px',
-        fontSize: 'large'
-    }
+        fontSize: 'large',
+        cursor: 'pointer',
+    },
 }));
-
 
 export default useStyles;

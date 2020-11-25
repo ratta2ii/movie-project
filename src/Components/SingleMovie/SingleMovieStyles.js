@@ -11,19 +11,19 @@ export const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: 20,
-        width: 240,
+        width: 200,
         backgroundColor: '#223037',
         borderTop: '5px solid #2f3940',
         borderRight: '5px solid #2f3940',
         borderBottom: '5px solid #2f3940',
         borderLeft: '5px solid #2f3940',
-        height: 360,
+        height: 300,
         marginBottom: 15,
         cursor: 'pointer',
     },
     moviePosterImg: {
-        width: 240,
-        height: 360,
+        width: 200,
+        height: 300,
     }
 }));
 
