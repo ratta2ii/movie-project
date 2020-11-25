@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
-import { movieInfoCall } from './../../Actions/movieInfoActions';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import SingleMovie from './../../Components/SingleMovie/SingleMovie';
-// import { Link } from "react-router-dom";
-// import Button from '@material-ui/core/Button';
-// import Grid from '@material-ui/core/Grid';
-//import Typography from '@material-ui/core/Typography';
+import useStyles from './MoviesStyles';
+import { movieInfoCall } from './../../Actions/movieInfoActions';
 
 
 const Movies = (props) => {
 
-
     const { dispatch, movies, moviesError, isLoading } = props;
-
+    const classes = useStyles();
 
     const handleMovieInfo = (imdbID) => {
         dispatch(movieInfoCall(imdbID));
@@ -22,23 +21,34 @@ const Movies = (props) => {
         }, 200)
     }
 
-
     if (movies) {
         if (movies.length > 0) {
             return (
-                <Box>
-                    {movies.map((ele, index) =>
-                        <SingleMovie
-                            handleMovieInfo={handleMovieInfo}
-                            key={index}
-                            poster={ele.Poster}
-                            imdbID={ele.imdbID}
-                        />
-                    )}
-                </Box>
+                <Box className={classes.root} >
+                    <Grid container spacing={8} >
+                        {movies.map((ele, index) =>
+                            <SingleMovie
+                                handleMovieInfo={handleMovieInfo}
+                                key={index}
+                                poster={ele.Poster}
+                                imdbID={ele.imdbID}
+                            />
+                        )}
+                    </Grid>
+                    <Box className={classes.returnHomeBox} >
+                        <Button
+                            className={classes.returnHomeBtn}
+                            component={Link}
+                            to='/'
+                        >
+                            RETURN HOME
+                        </Button>
+                    </Box>
+                </Box >
             );
         }
     }
+    //! Here down still needs styling (reusable error component coming soon).
     if (moviesError) {
         return <React.Fragment>Error: {moviesError.message}</React.Fragment>;
     }
@@ -50,15 +60,13 @@ const Movies = (props) => {
     }
 }
 
-
 const mapStateToProps = state => {
     return {
         movies: state.moviesSlice.movies,
         moviesError: state.moviesSlice.error,
         isLoading: state.moviesSlice.isLoading,
     }
-}
-
+};
 
 export default connect(mapStateToProps)(Movies);
 
