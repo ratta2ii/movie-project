@@ -26,13 +26,20 @@ const Movies = (props) => {
             return (
                 <Box className={classes.root} >
                     <Grid container spacing={8} >
-                        {movies.map((ele, index) =>
-                            <SingleMovie
-                                handleMovieInfo={handleMovieInfo}
-                                key={index}
-                                poster={ele.Poster}
-                                imdbID={ele.imdbID}
-                            />
+                        {movies.map((ele, index) => {
+                                let poster = ele.Poster;
+                                if ((!poster) || poster === "N/A") {
+                                    poster = `https://via.placeholder.com/200x300.png/000000/FFFFFF?text=NO POSTER`
+                                }
+                                return (           
+                                    <SingleMovie
+                                        handleMovieInfo={handleMovieInfo}
+                                        key={index}
+                                        poster={poster}
+                                        imdbID={ele.imdbID}
+                                    />
+                                ); 
+                        }
                         )}
                     </Grid>
                     <Box className={classes.returnHomeBox} >

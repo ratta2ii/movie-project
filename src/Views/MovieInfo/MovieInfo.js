@@ -129,7 +129,10 @@ const MovieInfo = (props) => {
                         {/* Main movie poster grid container */}
                         <Grid item xs={12} md={6} className={classes.posterImgGridItem} >
                             <Box className={classes.posterImgCon} >
-                                <img src={Poster}
+                                <img 
+                                    // This sets a default placeholder poster if missing
+                                    src={((Poster) || Poster) !== 'N/A' ? Poster :
+                                        `https://via.placeholder.com/200x300.png/000000/FFFFFF?text=NO POSTER`}
                                     alt="movie poster"
                                     className={classes.posterImg}
                                 />
