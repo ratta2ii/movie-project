@@ -21,7 +21,7 @@ export const getMoviesFailure = (error) => ({
 export const moviesByTitleCall = (movieTitle) => {
     return (dispatch, getState) => {
         // returns a list of movies based on the title a user inputed
-        fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBAPI_KEY}&plot=short&s=${movieTitle}`)
+        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBAPI_KEY}&plot=short&s=${movieTitle}`)
             .then(res => res.json())
             .then(results => {
                 console.log(results.Search);
