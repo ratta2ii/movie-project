@@ -1,10 +1,8 @@
 # Movie Ratings App
+
 Live: [Movie Ratings App Live](https://ratta2ii.github.io/movie-ratings-app/#/)
 
 Repo: [github.com/ratta2ii/movie-ratings-app](https://github.com/ratta2ii/movie-ratings-app)
-
-
-
 
 <center>
 
@@ -16,24 +14,27 @@ Repo: [github.com/ratta2ii/movie-ratings-app](https://github.com/ratta2ii/movie-
 
 </center>
 
+
 # Project Description
 
-_Movie Ratings App is a client-side application that uses a Firebase database for client-side queries. The application is built using JavaScript with the React library, and Material UI for design._
+_Movie Ratings App is a client-side application that uses a Firebase database for client-side queries. The application is built using HTML, JavaScript with the React library, and Material UI and CSS for design._
 
- _The application also takes advantage of an API (omdbapi.com), allowing a user to search for movies according to different specifications. This particular application searches for movies by title name for the first request, and by ID at an additional endpoint for the second request. When the API first returns a list of movies, a user can then select a single movie, at which point the selected movies ID is targeted and used to make the second request to retrieve all of the details for that specific movie._ 
+ _The application also takes advantage of an API (omdbapi.com), which retrieves a list of movies according to different search specifications. This particular application searches for movies using the title name for one request, and by targeting the selected movies ID to make an additional request at a second endpoint._ 
  
- _I also implemented both upvote and downvote functionality for each selected movie, which allows each user to add their own rating. A user can choose only one rating per session (since there is no authentication), however, a user can deselect their current vote and vote again. Votes are then stored in a database and saved in accordance with their ID. Each time a movie is selected, the database is queried in order to retrieve any previous upvotes and downvotes._
+ _I also implemented both upvote and downvote functionality for each of the selected movies. This allows each user to add their own rating. The user can choose only one rating per session (since there is no authentication), however, a user can deselect their current vote and vote again. Votes are then stored in a database and saved in accordance with their ID. Each time a movie is selected, the database is queried in order to retrieve any previous upvotes and downvotes that may be previously stored in the database._
 
- _I also chose to use several additional technologies to build an application that would be both scalable and what I believe would be more in line with a larger application. For example, instead of drilling props to child components, since it is a relatively small application, I chose to use Redux for global state management as a way to demonstrate additional skills. For this same reason, I also chose to a couple different reducers along with a root reducer. I also used action creators, action types, constants, added middleware and a middleware logger, and structured the application in a way that would be easily scalable for additional functionality._
+ _I also chose to use several additional technologies that would be more in line with industry standards for a larger application. For example, since it is a relatively small application, I could have just drilled props to child components, but instead chose to use Redux for global state management. I also used a couple different reducers along with a root reducer, action creators, action types, constants, added middleware and a middleware logger, and structured the application in a way that would be more easily scalable for additional functionality._
+
 
 # Setup
-#### View at [Movie Night App Live](https://ratta2ii.github.io/movie-ratings-app/#/) or follow the setup instructions below. (Note: If you choose to clone the repo, you will need to get an api key first from )
+
+#### View at [Movie Night App Live](https://ratta2ii.github.io/movie-ratings-app/#/) or follow the setup instructions below.
 
 #### (Application Start Up Instructions)
     
     STEP #1:
 
-    IMPORTANT: In order for the API's and the database to work, you will have to follow all 3 steps.
+    IMPORTANT: In order for the API, database and application to all work correctly, you will have to follow all 3 steps.
 
     1. Clone repo (https://github.com/ratta2ii/movie-ratings-app.git) 
 
@@ -43,7 +44,7 @@ _Movie Ratings App is a client-side application that uses a Firebase database fo
 
     4. Follow through with steps #2 and #3
 
-#### OMDBAPI API KEY INSTRUCTIONS:
+#### (Obtain API Key Instructions)
 
     STEP #2:
 
@@ -53,15 +54,16 @@ _Movie Ratings App is a client-side application that uses a Firebase database fo
 
     3. Add this exact variable to the .env file: REACT_APP_OMDBAPI_KEY=<your api key here>
 
-### FIREBASE DATABASE INSTRUCTIONS:
+#### (Firebase Database Setup Instructions)
 
     STEP #3:
 
     1. Follow Firebase quickstart guide to setup a database (https://firebase.google.com/docs/firestore/quickstart)
 
-    2. Once you create database, take your configuration files and add to (src/FirebaseDB/config.js)
+    2. Once you create database, take your firebase configurations and replace it with the code in (src/FirebaseDB/config.js)
 
-    3. Remove your API Key and store in the .env file with this exact variable: REACT_APP_FIREBASE_API_KEY=<your api key here>
+    3. Store firebase API key (from config file) and store in the .env file with this exact variable: REACT_APP_FIREBASE_API_KEY=<your api key here>
+
 
 # Technologies Used
 
