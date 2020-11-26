@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+## Movie Ratings App
+[github.com/ratta2ii/movie-ratings-app](https://github.com/ratta2ii/movie-ratings-app)
+<!-- | Github Repository |
+| ------ |
+| [github.com/ratta2ii/movie-ratings-app](https://github.com/ratta2ii/movie-ratings-app) |  -->
+#
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<center>
 
-## Available Scripts
+![Image of Paths](public/ReadmeImages/screenshot-1.png)
 
-In the project directory, you can run:
+![Image of Paths](public/ReadmeImages/screenshot-2.png)
 
-### `yarn start`
+![Image of Paths](public/ReadmeImages/screenshot-4.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</center>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Description
+# 
+_Movie Ratings App is a client-side application that uses a Firebase database for client-side queries. The application is built using JavaScript with the React library, and Material UI for design._
 
-### `yarn test`
+ _The application also takes advantage of an API (omdbapi.com), allowing a user to search for movies according to different specifications. This particular application searches for movies by title name for the first request, and by ID at an additional endpoint for the second request. When the API first returns a list of movies, a user can then select a single movie, at which point the selected movies ID is targeted and used to make the second request to retrieve all of the details for that specific movie._ 
+ 
+ _I also implemented both upvote and downvote functionality for each selected movie, which allows each user to add their own rating. A user can choose only one rating per session (since there is no authentication), however, a user can deselect their current vote and vote again. Votes are then stored in a database and saved in accordance with their ID. Each time a movie is selected, the database is queried in order to retrieve any previous upvotes and downvotes._
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ _I also chose to use several additional technologies to build an application that would be both scalable and what I believe would be more in line with a larger application. For example, instead of drilling props to child components, since it is a relatively small application, I chose to use Redux for global state management as a way to demonstrate additional skills. For this same reason, I also chose to a couple different reducers along with a root reducer. I also used action creators, action types, constants, added middleware and a middleware logger, and structured the application in a way that would be easily scalable for additional functionality._
 
-### `yarn build`
+## Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Get API key from 
+#
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+#
+| Languages | Frameworks | Cloud | Styling | Other |
+| ------ | ------ | ------ | ----- | ----- |
+| `JavaScript` | `React (library)`| `Firebase` | `Material UI` | `Redux` |
+| `HTML` |  |  |  |  |
+| `CSS` |  |  | |  |
