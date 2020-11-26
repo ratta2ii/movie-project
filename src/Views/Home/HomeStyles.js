@@ -23,6 +23,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     inputField: {
         fontSize: 20,
+        paddingLeft: 10,
         backgroundColor: 'white',
         '&hover': {
             backgroundColor: 'white',
