@@ -24,7 +24,6 @@ export const moviesByTitleCall = (movieTitle) => {
         fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBAPI_KEY}&plot=short&s=${movieTitle}`)
             .then(res => res.json())
             .then(results => {
-                console.log(results.Search);
                 dispatch(getMoviesSuccess(results.Search));
             },
             (error) => {
