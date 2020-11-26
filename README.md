@@ -50,7 +50,7 @@ _Movie Ratings App is a client-side application that uses a Firebase database fo
 
     STEP #2:
 
-    1. Go to omdbapi.com and obtain an API Key
+    1. Go to (omdbapi.com) and obtain an API Key
 
     2. Create an .env file inside the root directory of the movie-ratings-app
 
@@ -70,7 +70,7 @@ _Movie Ratings App is a client-side application that uses a Firebase database fo
 # Technologies Used
 
 | Languages | Frameworks | Cloud | Other |
-| ------ | ------ | ------ | ----- | ----- |
+| ------ | ------ | ------ | ----- | 
 | `JavaScript` | `React (library)`| `Firebase Database` | `Redux` |
 | `HTML` | `Material UI` | `Github` | `omdbapi API` |
 | `CSS` |  |  |   |
