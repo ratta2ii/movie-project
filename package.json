@@ -1,5 +1,6 @@
 {
-    "name": "movie-project",
+    "name": "movie-ratings-app",
+    "homepage": "http://ratta2ii.github.io/movie-ratings-app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -24,7 +25,9 @@
         "react-redux": "^7.1.3",
         "react-router-dom": "^5.2.0",
         "redux": "^4.0.5",
-        "redux-thunk": "^2.3.0"
+        "redux-thunk": "^2.3.0",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
     },
     "scripts": {
         "start": "react-scripts start",
