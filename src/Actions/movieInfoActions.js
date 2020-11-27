@@ -21,7 +21,7 @@ export const getMovieInfoFailure = (error) => ({
 export const movieInfoCall = (imdbID) => {
     return (dispatch, getState) => {
         // returns a single movies details based on a users selection
-        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBAPI_KEY}&plot=short&i=${imdbID}`)
+        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBAPI_API_KEY}&plot=short&i=${imdbID}`)
             .then(res => res.json())
             .then(results => {
                 dispatch(getMovieInfoSuccess(results));
