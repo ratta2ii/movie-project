@@ -37,7 +37,7 @@ _The application also uses an API (omdbapi.com) to retrieve a list of movies acc
     STEP #1:
 
     IMPORTANT:  YOU WILL NEED MY API KEYS IN ORDER TO PROCEED.
-    (You may also view live demo linked above.)
+                (You may also view live demo linked above.)
 
     1. git clone https://github.com/ratta2ii/movie-ratings-app.git  
 
