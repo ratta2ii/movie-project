@@ -148,7 +148,7 @@ const MovieInfo = (props) => {
                                             {Title}
                                         </Typography>
                                         <Typography className={classes.dirNdate} >
-                                            Release Date ({Released})
+                                            Release Date: ({Released})
                                         </Typography>
                                         <Typography className={classes.dirNdate} >
                                             Director by {Director}

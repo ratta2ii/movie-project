@@ -37,11 +37,11 @@ export const useStyles = makeStyles((theme) => ({
         padding: '50px 50px 50px 0',
     },
     movieTitle: {
-        fontSize: '2rem',
+        fontSize: '1.6rem',
         fontFamily: 'sans-serif',
         marginTop: 20,
         color: '#f5bc16',
-        lineHeight: '2.5rem',
+        lineHeight: '2.1rem',
     },
     dirNdate: {
         color: '#89b9df',

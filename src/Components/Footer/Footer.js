@@ -11,7 +11,7 @@ const Footer = (props) => {
     return (
         <Box className={classes.root}>
             <Typography variant="h6" className={classes.text}>
-                Movie App by Trevor Mackin
+                Movie Ratings App by Trevor Mackin
             </Typography>
         </Box>
     );
