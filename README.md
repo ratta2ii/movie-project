@@ -1,6 +1,6 @@
 # Movie Ratings App
 
-### (Responsive & Mobile Design Coming Soon)
+### (Testing, Mobile Version and additional design (including responsive) coming soon.)
 
 Live Demo: [Movie Ratings App Live](https://ratta2ii.github.io/movie-ratings-app/#/)
 

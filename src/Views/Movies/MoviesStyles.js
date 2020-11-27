@@ -6,18 +6,16 @@ export const useStyles = makeStyles((theme) => ({
         padding: '10% 13%',
     },
     returnHomeBox: {
-        marginTop: 60,
-        marginBottom: 200,
+        marginTop: 120,
+        textAlign: 'center',
     },
     returnHomeBtn: {
-        color: 'white',
         textDecoration: 'none',
         fontSize: 16,
-        background: "#3f51b5",
-        padding: '10px 75px 10px 50px',
-        position: 'absolute',
+        color: "white",
+        padding: '10px 50px 10px 50px',
         '&:hover': {
-            background: 'red',
+            color: 'red',
         }
     },
 }));

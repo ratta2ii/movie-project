@@ -10,7 +10,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* This the black overlay that covers the entire viewport */
-    background-color: rgb(0 0 0 / 93%);
+    /* background-color: rgb(0 0 0 / 93%); */
+    background-color: #0e1315fa;
     width: 100vw;
     min-height: 80vh;
     margin-top: 20vh;

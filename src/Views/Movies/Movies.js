@@ -25,7 +25,7 @@ const Movies = (props) => {
         if (movies.length > 0) {
             return (
                 <Box className={classes.root} >
-                    <Grid container spacing={8} >
+                    <Grid container spacing={8} justify='center'>
                         {movies.map((ele, index) => {
                                 let poster = ele.Poster;
                                 if ((!poster) || poster === "N/A") {
@@ -48,7 +48,7 @@ const Movies = (props) => {
                             component={Link}
                             to='/'
                         >
-                            RETURN HOME
+                            SEARCH A DIFFERENT TITLE
                         </Button>
                     </Box>
                 </Box >
