@@ -34,7 +34,7 @@ const Movies = (props) => {
                                 return (           
                                     <SingleMovie
                                         handleMovieInfo={handleMovieInfo}
-                                        key={index}
+                                        key={ele.imdbID}
                                         poster={poster}
                                         imdbID={ele.imdbID}
                                     />

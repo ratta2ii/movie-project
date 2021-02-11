@@ -11,19 +11,25 @@ export const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: 20,
-        width: 200,
+        width: 230,
         backgroundColor: '#223037',
-        borderTop: '5px solid #2f3940',
-        borderRight: '5px solid #2f3940',
-        borderBottom: '5px solid #2f3940',
-        borderLeft: '5px solid #2f3940',
-        height: 300,
+        // borderTop: '5px solid #2f3940',
+        // borderRight: '5px solid #2f3940',
+        // borderBottom: '5px solid #2f3940',
+        // borderLeft: '5px solid #2f3940',
+        height: 350,
         marginBottom: 15,
-        cursor: 'pointer',
     },
     moviePosterImg: {
-        width: 200,
-        height: 300,
+        width: 230,
+        height: 335,
+    },
+    detailsLink: {
+        fontSize: 14,
+        color: "#89b9df",
+        float: "right",
+        margin: 5,
+        cursor: 'pointer',
     }
 }));
 
