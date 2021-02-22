@@ -7,59 +7,59 @@ import { Typography } from '@material-ui/core';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import FilledInput from '@material-ui/core/FilledInput';
-import Footer from './../../Components/Footer/Footer';
 import useStyles from './HomeStyles';
-
 
 const Home = (props) => {
 
-    const { dispatch } = props;
-    const classes = useStyles();
-    const [movieTitle, setMovieTitle] = useState('');
+  const { dispatch } = props;
+  const classes = useStyles();
+  const [movieTitle, setMovieTitle] = useState('');
 
-    const handleFindMovie = () => {
-        dispatch(moviesByTitleCall(movieTitle));
-        props.history.push('/movies');
-    }
+  const handleFindMovie = () => {
+    dispatch(moviesByTitleCall(movieTitle));
+    props.history.push('/movies');
+  }
 
-    return (
-        <Box className={classes.root} >
-            <Box>
-                <Typography className={classes.title} >
-                    SEARCH MOVIES BY TITLE
+  return (
+    <Box className={classes.root} >
+      <Box>
+        <Typography className={classes.title} >
+          SEARCH MOVIES BY TITLE
                 </Typography>
-                <Box className={classes.formBox} >
-                    <FormControl
-                        // fullWidth 
-                        className={classes.FormControl}
-                        variant="filled" >
-                        <InputLabel htmlFor="filled-adornment-amount" >
-                            Enter Movie Title Here
+        <Box className={classes.formBox} >
+          <FormControl
+            // fullWidth 
+            className={classes.FormControl}
+            variant="filled" >
+            <InputLabel
+              className={classes.inputLabel}
+              htmlFor="filled-adornment-amount"
+            >
+              Enter Movie Title Here
                         </InputLabel>
-                        <FilledInput
-                            className={classes.inputField}
-                            onChange={(e) => { setMovieTitle(e.target.value) }}
-                        />
-                    </FormControl>
-                    <Button
-                        className={classes.findMovieButton}
-                        onClick={handleFindMovie}>
-                        FIND MOVIE
-                    </Button>
-                </Box>
-                <Box>
-                </Box>
-            </Box>
-            <Footer />
+            <FilledInput
+              className={classes.inputField}
+              onChange={(e) => { setMovieTitle(e.target.value) }}
+            />
+          </FormControl>
+          <Button
+            className={classes.findMovieButton}
+            onClick={handleFindMovie}>
+            FIND MOVIE
+          </Button>
         </Box>
-    );
+        <Box>
+        </Box>
+      </Box>
+    </Box>
+  );
 };
 
 const mapStateToProps = state => {
-    return {
-        movies: state.moviesSlice.movies,
-        moviesError: state.moviesSlice.error,
-    }
+  return {
+    movies: state.moviesSlice.movies,
+    moviesError: state.moviesSlice.error,
+  }
 };
 
 export default connect(mapStateToProps)(Home);
