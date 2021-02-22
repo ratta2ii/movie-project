@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/movie-ratings-app/static/css/main.0e03feaa.chunk.css",
-    "main.js": "/movie-ratings-app/static/js/main.ebcbb619.chunk.js",
-    "main.js.map": "/movie-ratings-app/static/js/main.ebcbb619.chunk.js.map",
+    "main.js": "/movie-ratings-app/static/js/main.6ead8dc1.chunk.js",
+    "main.js.map": "/movie-ratings-app/static/js/main.6ead8dc1.chunk.js.map",
     "runtime-main.js": "/movie-ratings-app/static/js/runtime-main.bab5211e.js",
     "runtime-main.js.map": "/movie-ratings-app/static/js/runtime-main.bab5211e.js.map",
-    "static/js/2.a64741aa.chunk.js": "/movie-ratings-app/static/js/2.a64741aa.chunk.js",
-    "static/js/2.a64741aa.chunk.js.map": "/movie-ratings-app/static/js/2.a64741aa.chunk.js.map",
+    "static/js/2.7ef788b6.chunk.js": "/movie-ratings-app/static/js/2.7ef788b6.chunk.js",
+    "static/js/2.7ef788b6.chunk.js.map": "/movie-ratings-app/static/js/2.7ef788b6.chunk.js.map",
     "index.html": "/movie-ratings-app/index.html",
     "static/css/main.0e03feaa.chunk.css.map": "/movie-ratings-app/static/css/main.0e03feaa.chunk.css.map",
-    "static/js/2.a64741aa.chunk.js.LICENSE.txt": "/movie-ratings-app/static/js/2.a64741aa.chunk.js.LICENSE.txt",
-    "static/js/main.ebcbb619.chunk.js.LICENSE.txt": "/movie-ratings-app/static/js/main.ebcbb619.chunk.js.LICENSE.txt"
+    "static/js/2.7ef788b6.chunk.js.LICENSE.txt": "/movie-ratings-app/static/js/2.7ef788b6.chunk.js.LICENSE.txt",
+    "static/js/main.6ead8dc1.chunk.js.LICENSE.txt": "/movie-ratings-app/static/js/main.6ead8dc1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bab5211e.js",
-    "static/js/2.a64741aa.chunk.js",
+    "static/js/2.7ef788b6.chunk.js",
     "static/css/main.0e03feaa.chunk.css",
-    "static/js/main.ebcbb619.chunk.js"
+    "static/js/main.6ead8dc1.chunk.js"
   ]
 }
