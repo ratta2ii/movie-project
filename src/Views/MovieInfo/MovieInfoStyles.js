@@ -25,7 +25,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,
-      marginBottom: 100,
+      marginBottom: 0,
     },
   },
   posterImgGridItem: {
@@ -43,10 +43,16 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: '40%',
     },
+    [theme.breakpoints.down('xs')]: {
+      width: '70%',
+    },
   },
   posterImg: {
     width: '100%',
     maxHeight: 340,
+    [theme.breakpoints.down('xs')]: {
+      maxHeight: 365, 
+    },
   },
   infoBox: {
     padding: '50px 50px 50px 0',
@@ -82,6 +88,9 @@ export const useStyles = makeStyles((theme) => ({
     height: 65,
     display: 'flex',
     alignItems: 'center',
+    [theme.breakpoints.down('xs')]: {
+      paddingBottom: 100,
+    },
   },
   backContainer: {
     display: 'flex',
@@ -113,7 +122,10 @@ export const useStyles = makeStyles((theme) => ({
     height: 40,
     color: '#637c90',
     [theme.breakpoints.down('sm')]: {
-      marginRight: 0,
+      margin: 0,
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 10,
     },
   },
   voteText: {
@@ -129,6 +141,9 @@ export const useStyles = makeStyles((theme) => ({
     margin: '0 10px 0 2px',
     fontSize: 'large',
     cursor: 'pointer',
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: 20,
+    },
   },
 }));
 
